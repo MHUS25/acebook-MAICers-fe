@@ -26,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "cypress": "^3.1.2"
+    "cypress": "^3.1.2",
+    "cypress-react-unit-test": "^1.2.1"
   }
 }
