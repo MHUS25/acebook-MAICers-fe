@@ -26,7 +26,7 @@ class Posts extends Component {
     })
 
     return (
-      <ul class="posts">
+      <ul>
         {posts}
       </ul>
     )
