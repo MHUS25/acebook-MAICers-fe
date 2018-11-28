@@ -9,8 +9,8 @@ script:
   - npm run build
 deploy:
   provider: surge
-  skip_cleanup: true
   domain: acebook-maicers-fe.surge.sh
-  project: ./build/
+  project: ./static/
+  skip_cleanup: true
 on:
   branch: master
