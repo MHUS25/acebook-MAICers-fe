@@ -8,9 +8,10 @@ class Posts extends Component {
     }
   }
 
-  async componentDidMount() {
-    const res = await fetch('https://maicers-acebook-api.herokuapp.com/posts')
-    res.json()
+  componentDidMount() {
+    fetch('https://maicers-acebook-api.herokuapp.com/posts')
+      .then((res) => {
+        return res.json() })
       .then((data) => {
         this.setState({ posts: data })
       })
@@ -26,7 +27,9 @@ class Posts extends Component {
     })
 
     return (
-      posts
+      <ul>
+        {posts}
+      </ul>
     )
   }
 }
