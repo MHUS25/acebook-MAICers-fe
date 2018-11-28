@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AllPosts from './AllPosts'
 
 class PostsBody  extends Component {
   constructor(props) {
@@ -18,21 +19,8 @@ class PostsBody  extends Component {
   }
 
   render(){
-    var posts = this.state.posts.map((post) => {
-      return(
-        <div key={post.id}>
-          <p>{post.message}</p>
-        </div>
-      )
-    })
-
     return (
-      <div>
-        <h1>Posts</h1>
-        <ul>
-          {posts}
-        </ul>
-    </div>
+      <AllPosts posts={this.state.posts} />
     )
   }
 }
