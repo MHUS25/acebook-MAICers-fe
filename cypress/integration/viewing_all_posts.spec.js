@@ -24,14 +24,15 @@ describe('Visiting the Posts Page', function() {
       this.fetchPostsDeferred.resolve({
         json () { return [
           {message: 'message 1', id: '1'},
-          {message: 'message 2', id: '2'},
+          {message: 'message 2', id: '2'}
         ]},
         ok: true
       })
     });
 
     it('diplays a list of posts', function() {
-      cy.get('ul div').should('have.length', 2)
+      cy.get('ul').contains('message 1')
+      cy.get('ul').contains('message 2')
     });
   });
 });
