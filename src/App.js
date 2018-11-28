@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Posts from './Posts'
+import PostsBody from './PostsBody'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
           <Switch>
-            <Route exact path='/posts' component={Posts}/>
+            <Route exact path='/posts' component={PostsBody}/>
           </Switch>
       </div>
     );
