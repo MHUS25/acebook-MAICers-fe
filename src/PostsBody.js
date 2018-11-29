@@ -29,7 +29,7 @@ class PostsBody  extends Component {
       <div>
       <h1>Posts</h1>
       <NewPostForm reloadPosts={this.fetchPosts}/>
-      <AllPosts posts={this.state.posts} />
+      <AllPosts posts={this.state.posts} fetchPosts={this.fetchPosts}/>
       </div>
     )
   }
