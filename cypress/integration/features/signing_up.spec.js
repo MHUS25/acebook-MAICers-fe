@@ -5,7 +5,7 @@ describe('Signing up', function () {
   beforeEach(function() {
     this.fetchPostsDeferred = deferred()
 
-    cy.visit('/signup', {
+    cy.visit('/', {
       onBeforeLoad (win) {
         cy.stub(win, 'fetch')
         .withArgs('https://maicers-acebook-api.herokuapp.com/signup')
@@ -14,7 +14,6 @@ describe('Signing up', function () {
       }
     });
   })
-
 
   it ('has a sign up form', function() {
     cy.get('#name').type('Clark Kent')
