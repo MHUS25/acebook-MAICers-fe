@@ -15,7 +15,7 @@ describe('Signing up', function () {
     });
   })
 
-  it ('has a sign up form', function() {
+  it ('has a sign up form which can be filled', function() {
     cy.get('#name').type('Clark Kent')
     cy.get('#email').type('Clark.Kent@test.com')
     cy.get('#password').type('superman')

@@ -20,4 +20,10 @@ describe('Signing up', function () {
     cy.get('button').click()
     cy.get('@getUser').should('be.calledWith', 'https://maicers-acebook-api.herokuapp.com/login')
   });
+
+  it ('receives a confirmation upon succesful log in', function() {
+
+  });
+
+
 });
