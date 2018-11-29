@@ -1,4 +1,4 @@
-import AllPosts from '../../src/AllPosts.js'
+import AllPosts from '../../../src/AllPosts.js'
 import React from 'react'
 import { mount } from 'cypress-react-unit-test'
 
