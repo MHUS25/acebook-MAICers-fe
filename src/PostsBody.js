@@ -20,7 +20,10 @@ class PostsBody  extends Component {
 
   render(){
     return (
+      <div>
+      <h1>Posts</h1>
       <AllPosts posts={this.state.posts} />
+      </div>
     )
   }
 }

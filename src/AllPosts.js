@@ -1,10 +1,11 @@
 import React from 'react';
+import Post from './Post'
 
 const AllPosts = (props) => {
   var posts = props.posts.map((post) => {
     return(
       <div key={post.id}>
-        <p>{post.message}</p>
+        <Post post={post} />
       </div>
     )
   })
