@@ -21,10 +21,10 @@ class SignUpBody extends Component {
     let formFields = {}
     return(
       <form>
-        <input id="name" ref={input => formFields.name = input} type="text"/>
-        <input id="email" ref={input => formFields.email = input} type="email"/>
-        <input id="password" ref={input => formFields.password = input} type="password"/>
-        <input id="passwordconfirmation" type="password"/>
+        <input placeholder="Enter name" id="name" ref={input => formFields.name = input} type="text"/><br/>
+        <input placeholder="Enter email" id="email" ref={input => formFields.email = input} type="email"/><br/>
+        <input placeholder="Enter password" id="password" ref={input => formFields.password = input} type="password"/><br/>
+        <input placeholder="Confirm Password" id="passwordconfirmation" type="password"/><br/>
         <button onClick={ (e) => {
           this.handleFormSumbit(formFields.name.value, formFields.email.value, formFields.password.value)
         }}>Sign Up</button>
