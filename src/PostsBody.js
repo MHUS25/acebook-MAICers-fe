@@ -42,7 +42,7 @@ class PostsBody  extends Component {
          <Collapse isOpen={this.state.isOpen} navbar>
            <Nav className="ml-auto" navbar>
              <NavItem>
-               <NavLink href="/components/">All posts</NavLink>
+               <NavLink href="/posts/">All posts</NavLink>
              </NavItem>
            </Nav>
          </Collapse>
