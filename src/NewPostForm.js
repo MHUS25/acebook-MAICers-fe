@@ -19,7 +19,7 @@ class NewPostForm extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    axios.post(`/api/posts`, {post: this.state.post})
+    axios.post(`https://maicers-acebook-api.herokuapp.com/api/posts`, {post: this.state.post})
       .then(res => {
         this.props.reloadPosts();
       })

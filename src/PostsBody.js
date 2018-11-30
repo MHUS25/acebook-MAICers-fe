@@ -16,7 +16,7 @@ class PostsBody  extends Component {
   }
 
   fetchPosts() {
-    fetch('/api/posts')
+    fetch('https://maicers-acebook-api.herokuapp.com/api/posts')
       .then((res) => {
         return res.json() })
       .then((data) => {

@@ -1,32 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Acebook - Front End
 
-## Available Scripts
+Acebook is a Facebook clone we created during a 2 week-long engineering project at Makers Academy. Our Acebook project began as a [full-stack Rails app](https://github.com/Learner5200/acebook-MAICers), but in the second week of the project we were required to divide the app into a [Rails API](https://github.com/imtiyazzaman1/acebook-MAICers-backend) and a React front-end. This repository houses the latter.
 
-In the project directory, you can run:
+## How to Use
 
-### `npm start`
+To access the app in production, visit http://acebook-maicers-fe.surge.sh/posts in your browser.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to contribute
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+First, clone this repo and run `npm install` to install dependencies.
 
-### `npm test`
+If you would like to contribute to this project, please open a new branch, and make a pull request with a summary of proposed changes.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Accessing the app in development
 
-### `npm run build`
+1. To launch the server, run `npm start`
+2. Visit http://localhost:3000/posts in your web browser
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Testing
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Due to time constraints, this front-end app is not yet thoroughly unit tested.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run `npm test` to run Jest unit tests.
 
-### `npx cypress open`
+Run `npx cypress open` to run feature tests. These can be found at `./cypress/integration`
 
-Launchs cypress window to run feature tests. These can be found at `./cypress/integration`
+### Continuous Integration
+
+* Travis CI will run on each pull request to ensure it is fit to be merged into the master branch.
+
+### How to deploy
+* Run `npm run build`
+* Run `cd build` to move to the build directory
+* Run `surge` and enter http://acebook-maicers-fe.surge.sh as the domain name
+* Visit http://acebook-maicers-fe.surge.sh/posts to see the app.
+
+## Our process
+
+* We used an agile product development process, working in two-day sprints beginning with a team planning session and ending with a team retrospective. We held stand-ups each morning to keep the whole team up to date on our progress.
+* We prioritised good agile team-working and product delivery practices, and the achievement of group/individual learning goals, over quantity of features. This was especially true during this second week of the project, where difficulties implementing user authentication with a separate Rails API made it difficult to test and implement all the features of the original full-stack; we therefore decided as a team to prioritise learning the fundamentals of React and the use of a Rails API over the delivery of features.
+
+## Team Members
+[**M**una Hussein](https://github.com/MHUS25) |
+[**A**nouska Hopkins](https://github.com/ahopkins94) |
+[**I**mtiyaz Zaman](https://github.com/imtiyazzaman1)  |
+[**C**hris Cooksley](https://github.com/Learner5200)

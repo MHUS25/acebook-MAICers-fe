@@ -9,7 +9,7 @@ class Post extends Component {
 
   delete(event) {
     event.preventDefault();
-    axios.delete(`/api/posts/${this.props.post.id}`)
+    axios.delete(`https://maicers-acebook-api.herokuapp.com/api/posts/${this.props.post.id}`)
       .then(res => {
         this.props.reloadPosts();
       })
