@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import axios from 'axios';
 
 class Post extends Component {
@@ -19,7 +20,7 @@ class Post extends Component {
     return (
       <div>
       <p>{this.props.post.message}</p>
-      <button onClick={this.delete}>Delete</button>
+      <Button onClick={this.delete} outline color="danger">Delete</Button>{' '}
       </div>
     )
   }

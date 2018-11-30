@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import axios from 'axios';
 
 class NewPostForm extends Component {
@@ -32,7 +33,7 @@ class NewPostForm extends Component {
           Make a new post:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="New Post" />
+        <Button outline color="info" type="submit">New Post</Button>{' '}
       </form>
     );
   }

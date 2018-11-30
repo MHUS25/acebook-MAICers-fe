@@ -36,7 +36,7 @@ class PostsBody  extends Component {
     return (
       <div>
 
-       <Navbar color="light" light expand="md">
+       <Navbar color="info" light expand="md">
          <NavbarBrand href="/">Acebook</NavbarBrand>
          <NavbarToggler onClick={this.toggle} />
          <Collapse isOpen={this.state.isOpen} navbar>
@@ -47,7 +47,6 @@ class PostsBody  extends Component {
            </Nav>
          </Collapse>
        </Navbar>
-
       <h1>Posts</h1>
       <NewPostForm reloadPosts={this.fetchPosts}/>
       <AllPosts posts={this.state.posts} fetchPosts={this.fetchPosts}/>
