@@ -27,6 +27,7 @@ class PostsBody  extends Component {
   render(){
     return (
       <div>
+      <button>Log out</button>
       <h1>Posts</h1>
       <NewPostForm reloadPosts={this.fetchPosts}/>
       <AllPosts posts={this.state.posts} fetchPosts={this.fetchPosts}/>
