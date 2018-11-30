@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AllPosts from './AllPosts'
+import NewPostForm from './NewPostForm'
 
 class PostsBody  extends Component {
   constructor(props) {
@@ -7,9 +8,14 @@ class PostsBody  extends Component {
     this.state = {
       posts: []
     }
+    this.fetchPosts = this.fetchPosts.bind(this);
   }
 
   componentDidMount() {
+    this.fetchPosts()
+  }
+
+  fetchPosts() {
     fetch('https://maicers-acebook-api.herokuapp.com/api/posts')
       .then((res) => {
         return res.json() })
@@ -23,7 +29,8 @@ class PostsBody  extends Component {
       <div>
       <button>Log out</button>
       <h1>Posts</h1>
-      <AllPosts posts={this.state.posts} />
+      <NewPostForm reloadPosts={this.fetchPosts}/>
+      <AllPosts posts={this.state.posts} fetchPosts={this.fetchPosts}/>
       </div>
     )
   }

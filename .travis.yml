@@ -7,10 +7,13 @@ cache:
 script:
   - npm test
   - npm run build
+env:
+  - SURGE_LOGIN=christopher.cooksley@gmail.com
+  - SURGE_TOKEN=c6c804bbc39e819fcc15a47f6ef4c196
 deploy:
   provider: surge
   domain: acebook-maicers-fe.surge.sh
-  project: ./static/
+  project: ./build/
   skip_cleanup: true
 on:
   branch: master
