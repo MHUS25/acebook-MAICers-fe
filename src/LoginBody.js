@@ -9,8 +9,7 @@ class LoginBody extends Component {
 
   handleLoginSumbit(email, password) {
     let body = JSON.stringify({user: {email: email, password: password}})
-// https://maicers-acebook-api.herokuapp.com/login
-    fetch('https://localhost:3001/login', {
+    fetch('https://maicers-acebook-api.herokuapp.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
