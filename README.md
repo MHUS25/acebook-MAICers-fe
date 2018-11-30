@@ -21,8 +21,6 @@ If you would like to contribute to this project, please open a new branch, and m
 
 Due to time constraints, this front-end app is not yet thoroughly unit tested.
 
-Run `npm test` to run Jest unit tests.
-
 Run `npx cypress open` to run feature tests. These can be found at `./cypress/integration`
 
 ### Continuous Integration
