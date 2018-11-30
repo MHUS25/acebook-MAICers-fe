@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MHUS25/acebook-maicers-fe.svg?branch=master)](https://travis-ci.org/MHUS25/acebook-maicers-fe)
+
 # Acebook - Front End
 
 Acebook is a Facebook clone we created during a 2 week-long engineering project at Makers Academy. Our Acebook project began as a [full-stack Rails app](https://github.com/Learner5200/acebook-MAICers), but in the second week of the project we were required to divide the app into a [Rails API](https://github.com/imtiyazzaman1/acebook-MAICers-backend) and a React front-end. This repository houses the latter.
